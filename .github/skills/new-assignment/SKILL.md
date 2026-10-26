@@ -11,26 +11,30 @@ As assignments ficam em `assignments/<id>/`, e o site lê `config.json` para exi
 
 Se o usuário não tiver especificado, pergunte qual conceito de programação a assignment deve abordar.
 
-> 📖 Leia [references/assignment-guide.md](references/assignment-guide.md) para orientações sobre dificuldade, escopo e quando incluir starter code.
+> Leia [references/assignment-guide.md](references/assignment-guide.md) para orientações sobre dificuldade, escopo e quando incluir starter code.
 
 ## Etapa 2: Criar a Assignment
 
-1. Crie `assignments/<kebab-case-id>/README.md` seguindo o [assignment template](../../../templates/assignment-template.md)
-2. (Opcional) Adicione starter code ou arquivos de dados no mesmo diretório
+1. Crie `assignments/<kebab-case-id>/README.md` seguindo o [assignment template](../../../templates/assignment-template.md).
+2. Opcionalmente, adicione starter code ou arquivos de dados no mesmo diretório.
 
 ## Etapa 3: Registrar no Website
 
-Use os scripts incluídos; NÃO edite `config.json` manualmente.
+Use os scripts incluídos; não edite `config.json` manualmente.
 
-**Registrar a assignment:**
+Para registrar a assignment:
 
-    node .github/skills/new-assignment/scripts/update-config.js <id> "<title>" "<description>"
+```bash
+node .github/skills/new-assignment/scripts/update-config.js <id> "<title>" "<description>"
+```
 
-**Registrar cada arquivo como attachment** (starter code, arquivos de dados etc.):
+Para registrar cada arquivo como attachment (starter code, arquivos de dados etc.):
 
-    node .github/skills/new-assignment/scripts/add-attachment.js <id> "<display-name>" <filename> <type>
+```bash
+node .github/skills/new-assignment/scripts/add-attachment.js <id> "<display-name>" <filename> <type>
+```
 
-Tipos comuns: `python`, `csv`, `json`, `txt`, `html`
+Tipos comuns: `python`, `csv`, `json`, `txt` e `html`.
 
 ## Etapa 4: Verificar
 
