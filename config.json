@@ -71,6 +71,20 @@
           "type": "python"
         }
       ]
+    },
+    {
+      "id": "testing-fastapi-apis",
+      "title": "Testing FastAPI APIs",
+      "description": "Write automated tests with pytest and TestClient to verify API responses and HTTP status codes.",
+      "path": "assignments/testing-fastapi-apis",
+      "dueDate": "2026-11-02",
+      "attachments": [
+        {
+          "name": "Starter Code",
+          "file": "starter-code.py",
+          "type": "python"
+        }
+      ]
     }
   ]
 }
